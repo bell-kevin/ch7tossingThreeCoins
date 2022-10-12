@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include "Coins.h"
 int main()
 {
     std::cout << "Chapter 7 Matching Coins by Kevin Bell\n\n";
+	cout << setprecision(2) << fixed;
 	Coin quarter;
 	Coin dime;
 	Coin nickel;
@@ -21,13 +23,13 @@ int main()
 		cout << "	Nickel is " << nickel.getSideUp() << endl;
 		if (quarter.getSideUp() == "heads") {
 			myGameTotal += 0.25;
-		}
+		} 
 		if (dime.getSideUp() == "heads") {
 			myGameTotal += 0.10;
 		}
 		if (nickel.getSideUp() == "heads") {
 			myGameTotal += 0.05;
-		}
+		} 
 		cout << "Tossed each coin, total is $" << myGameTotal << endl;
 		cout << "Computer's Turn: " << endl;
 		quarter.toss();
@@ -38,13 +40,13 @@ int main()
 		cout << "	Nickel is " << nickel.getSideUp() << endl;
 		if (quarter.getSideUp() == "heads") {
 			computerGameTotal += 0.25;
-		}
+		} // end if
 		if (dime.getSideUp() == "heads") {
 			computerGameTotal += 0.10;
-		}
+		} // end if
 		if (nickel.getSideUp() == "heads") {
 			computerGameTotal += 0.05;
-		}
+		} // end if
 		cout << "Tossed each coin, total is $" << computerGameTotal << endl;
 		if (myGameTotal > computerGameTotal) {
 			cout << "You win! Added " << myGameTotal << " to your total." << endl;
@@ -54,11 +56,11 @@ int main()
 		}
 		else {
 			cout << "It's a tie!" << endl;
-		}
+		} // end if
 		cout << "Would you like to toss again? (y/n): ";
 		cin >> continueProgram;
 		cout << endl;
-	}
+	} // end while
 		myWholeTotal += myGameTotal;
 		computerWholeTotal += computerGameTotal;
 		cout << "Your total is $" << myWholeTotal << endl;
@@ -71,5 +73,5 @@ int main()
 		}
 		else {
 			cout << "You tied!" << endl;
-		}
-}
+		} // end if
+} // end main
