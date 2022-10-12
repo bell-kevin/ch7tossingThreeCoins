@@ -49,20 +49,26 @@ int main()
 		} // end if
 		cout << "Tossed each coin, total is $" << computerGameTotal << endl;
 		if (myGameTotal > computerGameTotal) {
-			cout << "You win! Added " << myGameTotal << " to your total." << endl;
+			myWholeTotal += myGameTotal;
+			cout << "You win! Added $" << myGameTotal << " to your total." << endl;
+			computerGameTotal = 0;
+			myGameTotal = 0;
 		}
 		else if (myGameTotal < computerGameTotal) {
+			computerWholeTotal += computerGameTotal;
 			cout << "You lose!" << endl;
+			myGameTotal = 0;
+			computerGameTotal = 0;
 		}
 		else {
 			cout << "It's a tie!" << endl;
+			myGameTotal = 0;
+			computerGameTotal = 0;
 		} // end if
 		cout << "Would you like to toss again? (y/n): ";
 		cin >> continueProgram;
 		cout << endl;
 	} // end while
-		myWholeTotal += myGameTotal;
-		computerWholeTotal += computerGameTotal;
 		cout << "Your total is $" << myWholeTotal << endl;
 		cout << "Computer's total is $" << computerWholeTotal << endl;
 		if (myWholeTotal > computerWholeTotal) {
@@ -74,4 +80,6 @@ int main()
 		else {
 			cout << "You tied!" << endl;
 		} // end if
+		system("pause");
+		return 0;
 } // end main
