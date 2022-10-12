@@ -1,0 +1,3 @@
+﻿  ch7coinTossSimulator.cpp
+C:\Users\4800590195\source\repos\ch7coinTossSimulator\ch7coinTossSimulator\Coin.h(17,13): warning C4244: '=': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ch7coinTossSimulator.vcxproj -> C:\Users\4800590195\source\repos\ch7coinTossSimulator\x64\Debug\ch7coinTossSimulator.exe
