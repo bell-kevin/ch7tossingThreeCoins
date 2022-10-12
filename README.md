@@ -4,11 +4,11 @@ Using the same Coin class from the previous project, create a game that uses 3 i
 
 Here is an example of the first round:
 
-Ch 7 Match Coins start
+![Ch 7 Match Coins start](https://github.com/bell-kevin/ch7tossingThreeCoins/blob/main/firstTurn.PNG)
 
 Here is an example of the end:
 
-Ch 7 Match Coins last
+![Ch 7 Match Coins last](https://github.com/bell-kevin/ch7tossingThreeCoins/blob/main/lastTurn.PNG)
 
 Create a function that tosses the 3 coins, adds up the value of those coins which are heads up, and returns that total. 
 
